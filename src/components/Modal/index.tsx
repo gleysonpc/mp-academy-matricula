@@ -15,6 +15,7 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, closeModal, title }) =>
       isOpen={isOpen}
       onRequestClose={closeModal}
       style={customStyles}
+      ariaHideApp={false}
     >
 
       <ModalContent>

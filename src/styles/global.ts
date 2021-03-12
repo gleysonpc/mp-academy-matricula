@@ -42,9 +42,29 @@ export const  GlobalStyle = createGlobalStyle`
         color: ${theme.gray};
         opacity: 0.7;     
       }
-      &:focus{      
+      &:focus {      
         border-left: 3px solid ${theme.primary} ;      
-      }
+    }
+  }
+
+
+  select {
+      margin-top: 5px;
+      height: 35px;
+      background: ${theme.accent};
+      border: none;
+      border-radius: 6px; 
+      outline: none;
+      padding: 2px 5px;
+      caret-color: ${theme.gray};   
+      font-size: 16px;      
+      border-left: 3px solid ${theme.accent} ;      
+      color: ${theme.gray};
+        &::placeholder{
+        color: ${theme.gray};
+        opacity: 0.7;     
+      }     
+    }
   }
 
   .Toastify__toast--success {
