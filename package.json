@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -10,9 +11,18 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.7",
     "nw-react-scripts": "4.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-dropdown": "^1.9.2",
+    "react-loader-spinner": "^4.0.0",
+    "react-modal": "^3.12.1",
+    "react-outside-click-handler": "^1.3.0",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-toastify": "^7.0.3",
+    "styled-components": "^5.2.1",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
   },
@@ -46,12 +56,23 @@
     "platforms": [
       "osx64",
       "win32",
-      "win64"
+      "win64",
+      "linux64"
     ],
     "version": "latest",
     "flavor": "normal",
     "buildDir": "./build",
     "cacheDir": "./cache",
-    "macIcns": "./src/logo.icns"
+    "macIcns": "./src/logo.icns",
+    "window": {
+      "icon": "icon.png",
+      "title": "Matrícula"
+    }
+  },
+  "devDependencies": {
+    "@types/react-modal": "^3.12.0",
+    "@types/react-outside-click-handler": "^1.3.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7"
   }
 }
