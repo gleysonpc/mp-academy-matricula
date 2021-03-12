@@ -18,7 +18,6 @@ export const TopBarContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
   padding: 0 10px;
 `;
 
@@ -44,4 +43,25 @@ export const UserButton = styled.span`
     margin-left: 7px;
     color: ${props => props.theme.primary};
   }
+`;
+
+export const ModalContainer = styled.div`
+  width: 400px;
+  padding: 10px 10px;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .--modal-footer {    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    .primary {
+      margin-left: 10px;
+    }
+  }
+  
 `;
