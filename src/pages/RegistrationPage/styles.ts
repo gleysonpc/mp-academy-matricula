@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const PageContent = styled.div`
   padding-top: 20px; 
+  max-width: 800px;
 `;
 
 export const PageTitle = styled.h1`
@@ -24,10 +25,4 @@ export const SectionDivider = styled.div`
   opacity: 0.3;
   margin: 10px 0;
   display: block;
-`;
-
-export const Column = styled.div`
-  .btn {
-    margin: 5px 0;
-  }
 `;

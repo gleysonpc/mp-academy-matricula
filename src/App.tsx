@@ -1,25 +1,11 @@
-import { GlobalStyle, theme } from './styles/global';
-import { ThemeProvider } from 'styled-components'
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Routes from './routes';
 import { Provider } from 'react-redux'
+import { ThemeProvider } from 'styled-components'
 import { store } from './store';
+import { GlobalStyle, theme } from './styles/global';
+import Routes from './routes';
+import ConfigToast from './components/ConfigToast';
 
 function App() {
-
-  const ConfigToast = () => <ToastContainer
-    position="bottom-center"
-    autoClose={5000}
-    hideProgressBar={false}
-    newestOnTop={false}
-    closeOnClick
-    rtl={false}
-    pauseOnFocusLoss
-    draggable
-    pauseOnHover
-  />
-  
   return (
     <>
       <ThemeProvider theme={theme}>
