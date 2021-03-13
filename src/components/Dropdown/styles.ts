@@ -10,6 +10,7 @@ export const DropdownButtonWrapper = styled.div`
 
 export const DropdownList = styled.div`
     background: #242A33;
+    z-index: 99;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;    
     position: absolute;
